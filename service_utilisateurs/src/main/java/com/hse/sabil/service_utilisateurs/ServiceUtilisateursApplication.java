@@ -2,8 +2,10 @@ package com.hse.sabil.service_utilisateurs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
+@EnableDiscoveryClient
 public class ServiceUtilisateursApplication {
 
 	public static void main(String[] args) {

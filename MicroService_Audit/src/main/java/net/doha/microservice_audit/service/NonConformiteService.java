@@ -23,7 +23,7 @@ public class NonConformiteService {
 
     private RestTemplate restTemplate;
 
-    private static final String USER_SERVICE_URL = "http://localhost:8081/api/users";
+    private static final String USER_SERVICE_URL = "http://localhost:8080/api/users";
 
     public NonConformiteDTO createNonConformite(CreateNonConformiteRequest request) {
         Audit audit = auditRepository.findById(request.getAuditId())

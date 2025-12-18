@@ -27,7 +27,7 @@ public class AuthService {
     private PasswordEncoder passwordEncoder;
 
 
-    public AuthService(JwtUtil jwtutil, Utilisateur_repo utilisateur_repo, Role_repo role_repo, AuthenticationManager auth_manager, PasswordEncoder passwordEncoder, UserDetailsServiceImp userDetailsServiceImp) {
+    public AuthService(JwtUtil jwtutil, Utilisateur_repo utilisateur_repo, Role_repo role_repo, AuthenticationManager auth_manager, PasswordEncoder passwordEncoder) {
         this.jwtutil = jwtutil;
         this.utilisateur_repo = utilisateur_repo;
         this.role_repo = role_repo;

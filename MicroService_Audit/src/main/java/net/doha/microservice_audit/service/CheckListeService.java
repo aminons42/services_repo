@@ -31,7 +31,7 @@ public class CheckListeService {
 
 
 
-    private static final String USER_SERVICE_URL = "http://localhost:8081/api/users";
+    private static final String USER_SERVICE_URL = "http://localhost:8080/api/users";
 
     public CheckListDTO createTemplate(CreateTemplateRequest request, Authentication auth) {
         String username = auth.getName();

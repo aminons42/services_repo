@@ -29,7 +29,7 @@ public class AuditService {
         this.questionRepo = questionRepo;
         this.restTemplate = restTemplate;
     }
-    private static final String USER_SERVICE_URL = "http://localhost:8081/api/users";
+    private static final String USER_SERVICE_URL = "http://localhost:8080/api/users";
 
     public AuditDTO createAudit(CreateAuditRequest request, Authentication auth) {
         String username = auth.getName();
@@ -177,7 +177,6 @@ public class AuditService {
         dto.setAuditeurId(audit.getAuditeurId());
         dto.setAuditeurNom(auditeur.getNom());
         dto.setAuditeurPrenom(auditeur.getPrenom());
-        dto.setAuditeurEmail(auditeur.getEmail());
         dto.setDepartement(audit.getDepartement());
         dto.setZone(audit.getZone());
         dto.setScoreGlobal(audit.getScoreGlobal());

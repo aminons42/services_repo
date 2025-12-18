@@ -70,7 +70,7 @@ public class NonComformite {
 
     public void cloturer() {
         this.statut = StatutNC.CLOTUREE;
-        this.dateClôture = LocalDateTime.now();
+        this.dateCloture = LocalDateTime.now();
     }
 
     public void escalader(Long nouveauResponsableId) {
